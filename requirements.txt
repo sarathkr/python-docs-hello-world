@@ -6,4 +6,4 @@ MarkupSafe==1.0
 Werkzeug==0.14.1
 opencv-python==4.2.0.34
 pyzbar==0.1.8
-tensorflow==1.15
+tensorflow==2.2.0
