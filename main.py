@@ -2,13 +2,8 @@ import numpy as np
 import cv2
 import tensorflow as tf
 import base64
-from flask import Flask,request,jsonify
-
-app = Flask(__name__)
-graph = tf.get_default_graph()
 
 
-@app.route('/')
 def hello_world():
     return """
     <!DOCTYPE html>
@@ -53,14 +48,4 @@ def hello_world():
 
 # HtmlVideoElement
 
-@app.route('/test',methods=['GET'])
-def test():
-    return "hello world!"
-
-@app.route('/submit',methods=['POST'])
-def submit():
-    image = request.args.get('image')
-
-    print(type(image))
-    return ""
 
